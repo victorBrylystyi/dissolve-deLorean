@@ -19,7 +19,7 @@ export const App = () => {
   const rootRef = useRef(document.getElementById('#root') as HTMLElement);
 
   return (
-    <Canvas dpr={1.5} camera={{ position: [3, 3, 5], fov: 42 }}>
+    <Canvas dpr={[1, 1.5]} camera={{ position: [3, 3, 5], fov: 42 }}>
       <OrbitControls makeDefault minDistance={4} maxDistance={40}/>
       <Suspense fallback={null}>
         <Env />
